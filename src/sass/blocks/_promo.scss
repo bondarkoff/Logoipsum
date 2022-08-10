@@ -1,0 +1,42 @@
+.promo {
+    padding-top: 160px;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__wrapper.second {
+        margin-top: 80px;
+    }
+    &__text {
+        padding-left: 165px;
+        &-title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 50px;
+            line-height: 50px;
+            color: $title-color;
+        }
+        &-subtitle {
+            font-family: 'Mulish', sans-serif;
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            color: $subtitle-color;
+        }
+        &-link {
+            margin-top: 30px;
+            a {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 17px;
+                line-height: 22px;
+                color: $second-color;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: $second-color;
+                    text-decoration-thickness: 2px;
+                    text-underline-offset: 10px;
+                }
+            }
+        }
+    }
+}

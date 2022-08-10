@@ -1,0 +1,107 @@
+.menu {
+    padding-top: 30px;
+    nav {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__list {
+        display: contents;
+    }
+    &__link {
+        list-style-type: none;
+        a {
+            opacity: 75%;
+            font-family: 'DM Sans', sans-serif;
+            color: $title-color;
+            font-size: 15px;
+            line-height: 22px;
+            transition: all linear .4s;
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: $second-color;
+                text-decoration-thickness: 2px;
+                text-underline-offset: 10px;
+                opacity: 100%;
+            }
+        }
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+    }
+    &__item {
+        &-title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 80px;
+            line-height: 77px;
+            text-align: left;
+        }
+        &-subtitle {
+            margin-top: 30px;
+            font-family: 'Mulish', sans-serif;
+            font-size: 20px;
+            line-height: 30px;
+            color: $subtitle-color;
+        }
+        &-btn, &-btn-purple {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 17px;
+            line-height: 22px;
+            width: 211px;
+            height: 60px;
+            background: $main-color;
+            border-radius: 10px;
+            border: rgba($color: #000000, $alpha: 0);
+            color: #fff;
+            transition: all linear .4s;
+            &:hover {
+                background: $second-color;
+            }
+            &:active, &:focus {
+                outline: none !important;
+            }
+            &::-moz-focus-inner {
+                border: 0 !important;
+            }
+        }
+        &-btn-purple {
+            margin-top: 50px;
+        }
+        &-arrow {
+            margin-left: 40px;
+            width: 60px;
+            height: 60px;
+            background: #FFFFFF;
+            border: 2px solid #E7E7E7;
+            border-radius: 100%;
+            transition: all linear .4s;
+            &:hover {
+                border: 2px solid $subtitle-color;
+                background: #dedede;
+                img {
+                    color: #fff;
+                }
+            }
+            &:active, &:focus {
+                outline: none !important;
+            }
+            &::-moz-focus-inner {
+                border: 0 !important;
+            }
+        }
+    }
+    &__links {
+        display: flex;
+        margin-top: 100px;
+        justify-content: space-between;
+        &-item {
+            opacity: 50%;
+            transition: all linear .4s;
+            &:hover {
+                opacity: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.skills {
+    padding-top: 150px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        text-align: center;
+        &-title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 24px;
+            line-height: 36px;
+            color: $title-color;
+        }
+        &-subtitle {
+            font-family: 'Mulish', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: $subtitle-color;
+        }
+        &-photo {
+            width: 150px;
+            height: 100px;
+        }
+    }
+}
